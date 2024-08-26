@@ -1,0 +1,128 @@
+@import 'src/styles/variables.scss';
+main {
+  text-align: center;
+  padding: 1em;
+  max-width: 800px;
+  margin: 0 auto;
+  @include mobile {
+    max-width: 100%;
+  }
+
+  .sources {
+    color: #dcd6d6;
+    font-size: 12px;
+    .source {
+      margin: 4px 0px;
+    }
+    a {
+      color: $primary-color;
+      opacity: 0.6;
+    }
+  }
+
+  h1 {
+    margin: 20px 0;
+    width: 100%;
+    font-size: 100px;
+    font-weight: 300;
+    text-align: center;
+    color: rgba($primary-color, 0.15);
+
+    @include mobile {
+      font-size: 60px;
+    }
+  }
+
+  .wrap-todo {
+    background: #fff;
+    margin: 0 auto 40px auto;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+
+    .header {
+      margin: auto;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      align-items: center;
+      border: 1px solid #dcd6d6;
+
+      background: rgba(0, 0, 0, 0.003);
+      box-shadow: inset 0 -2px 1px rgb(0 0 0 / 3%);
+
+      .toggle-all {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        img {
+          margin: 0 15px;
+          cursor: pointer;
+          opacity: 0.2;
+          &.completed {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    footer {
+      font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      position: relative;
+      height: 40px;
+      opacity: 0.6;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px #f6f6f6,
+        0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6,
+        0 17px 2px -6px rgba(0, 0, 0, 0.2);
+
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        height: 70px;
+      }
+      .number {
+        position: absolute;
+        margin: 10px;
+      }
+      .clear {
+        position: absolute;
+        margin: 12px;
+        right: 0px;
+        top: 0;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+      .status {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+          margin: 32px 0px 0px 0px;
+        }
+
+        & > p {
+          padding: 0px 7px;
+          margin: 10px 4px;
+          cursor: pointer;
+          border: 1px solid transparent;
+          border-radius: 3px;
+          transition: 0.5s;
+
+          &:hover {
+            border: 1px solid rgba(175, 47, 47, 0.68);
+          }
+          &.active {
+            border: 1px solid rgba(175, 47, 47, 0.68);
+          }
+        }
+      }
+    }
+  }
+}
