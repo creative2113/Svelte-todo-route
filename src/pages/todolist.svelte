@@ -43,7 +43,7 @@
   onDestroy(unsubscribeTodo)
 </script>
 
-<div>
+<div class="todo">
   <h1>Todo List</h1>
   <div class="wrap-todo">
     <div class="header">
@@ -87,9 +87,13 @@
     <div class="source">Design by thaind97git</div>
     <div class="source">
       Source code
-      <a target="__blank" href="https://github.com/thaind97git/svelte-todo-list"
+      <a target="__blank" href="https://github.com/creative2115/Svelte-todo-route"
         >here</a
       >
     </div>
   </div>
 </div>
+
+<style lang="scss">
+  @import '../App.scss';
+</style>
