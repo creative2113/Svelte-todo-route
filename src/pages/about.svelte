@@ -1,5 +1,3 @@
-<script lang="ts">
-  export let about = "";
-</script>
-
-<div {about}>About</div>
+<div>
+  <h1>About</h1>
+</div>

@@ -1,5 +1,3 @@
-<script lang="ts">
-    export let blog = ""
-</script>
-
-<div {blog}>Blog</div>
+<div>
+    <h1>Blog</h1>
+</div>
