@@ -87,7 +87,7 @@
     <div class="source">Design by thaind97git</div>
     <div class="source">
       Source code
-      <a target="__blank" href="https://github.com/creative2115/Svelte-todo-route"
+      <a target="__blank" href="https://github.com/creative2113/Svelte-todo-route"
         >here</a
       >
     </div>
