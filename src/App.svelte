@@ -1,12 +1,12 @@
 
 <script>
-  import Router from './routes/index.svelte';
+  // import Router from './routes/index.svelte';
+
+    import Todolist from "./pages/todolist.svelte";
+
 </script>
 
 <main>
-  <Router />
+  <!-- <Router /> -->
+  <Todolist />
 </main>
-
-<style lang="scss">
-  @import './App.scss';
-</style>
